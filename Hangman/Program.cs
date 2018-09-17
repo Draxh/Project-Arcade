@@ -12,7 +12,14 @@ namespace Hangman
     {
         
         private static GameChooser _gameChooser;
-        
+        private static Hangman _hangman;
+
+        public static Hangman Hangman
+        {
+            get => _hangman;
+            set => _hangman = value;
+        }
+
         public static void Music()
         {
             SoundPlayer player = new SoundPlayer();
@@ -25,7 +32,7 @@ namespace Hangman
             _gameChooser = new GameChooser();
             
             GameChooser.ShowText();
-            Music();
+            // Music();
             GameChooser.Select();
 
         }

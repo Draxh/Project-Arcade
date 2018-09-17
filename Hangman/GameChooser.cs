@@ -36,7 +36,7 @@ namespace Project_Arcade
                 case "1":
                     Console.Clear();
                     ShowText();
-                    Menu2();
+                    Menu();
                     break;
                 default:
                     Console.WriteLine("Falsche Eingabe");
@@ -44,7 +44,7 @@ namespace Project_Arcade
             }
         }
 
-        public static void Menu2()
+        public static void Menu()
         {
             Console.WriteLine("\r\n");
             Console.WriteLine("Select a Game");
