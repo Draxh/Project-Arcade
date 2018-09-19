@@ -10,7 +10,6 @@ namespace Hangman
 {
     internal class Program
     {
-        
         private static GameChooser _gameChooser;
         private static Hangman _hangman;
 
@@ -26,16 +25,14 @@ namespace Hangman
             player.SoundLocation = @"..\..\..\ArcadeMusic.wav";
             player.Play();
         }
-            
+
+
         public static void Main(string[] args)
         {
             _gameChooser = new GameChooser();
-            
             GameChooser.ShowText();
-            // Music();
+            Music();
             GameChooser.Select();
-
         }
-        
     }
 }

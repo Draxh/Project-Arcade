@@ -11,12 +11,17 @@ namespace Project_Arcade
 
         private static string[] Arcade =
         {
-            "▄▄▄       ██▀███   ▄████▄   ▄▄▄      ▓█████▄ ▓█████    ", "▒████▄    ▓██ ▒ ██▒▒██▀ ▀█  ▒████▄    ▒██▀ ██▌▓█   ▀    ",
-            "▒██  ▀█▄  ▓██ ░▄█ ▒▒▓█    ▄ ▒██  ▀█▄  ░██   █▌▒███      ", "░██▄▄▄▄██ ▒██▀▀█▄  ▒▓▓▄ ▄██▒░██▄▄▄▄██ ░▓█▄   ▌▒▓█  ▄   ",
-            " ▓█   ▓██▒░██▓ ▒██▒▒ ▓███▀ ░ ▓█   ▓██▒░▒████▓ ░▒████▒   ", " ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ░▒ ▒  ░ ▒▒   ▓▒█░ ▒▒▓  ▒ ░░ ▒░ ░   ",
-            "  ▒   ▒▒ ░  ░▒ ░ ▒░  ░  ▒     ▒   ▒▒ ░ ░ ▒  ▒  ░ ░  ░   ","  ░   ▒     ░░   ░ ░          ░   ▒    ░ ░  ░    ░      ",
+            "▄▄▄       ██▀███   ▄████▄   ▄▄▄      ▓█████▄ ▓█████    ",
+            "▒████▄    ▓██ ▒ ██▒▒██▀ ▀█  ▒████▄    ▒██▀ ██▌▓█   ▀    ",
+            "▒██  ▀█▄  ▓██ ░▄█ ▒▒▓█    ▄ ▒██  ▀█▄  ░██   █▌▒███      ",
+            "░██▄▄▄▄██ ▒██▀▀█▄  ▒▓▓▄ ▄██▒░██▄▄▄▄██ ░▓█▄   ▌▒▓█  ▄   ",
+            " ▓█   ▓██▒░██▓ ▒██▒▒ ▓███▀ ░ ▓█   ▓██▒░▒████▓ ░▒████▒   ",
+            " ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ░▒ ▒  ░ ▒▒   ▓▒█░ ▒▒▓  ▒ ░░ ▒░ ░   ",
+            "  ▒   ▒▒ ░  ░▒ ░ ▒░  ░  ▒     ▒   ▒▒ ░ ░ ▒  ▒  ░ ░  ░   ",
+            "  ░   ▒     ░░   ░ ░          ░   ▒    ░ ░  ░    ░      ",
             "      ░  ░   ░     ░ ░            ░  ░   ░       ░  ░ "
         };
+
 
         public static void ShowText()
         {
@@ -27,8 +32,12 @@ namespace Project_Arcade
             }
         }
 
-        public static void Select()
+        void Select()
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            ShowText();
+            Console.ResetColor();
             Console.WriteLine("\r\n");
             Console.WriteLine("Press [1] to Play");
             var check = Console.ReadLine();
@@ -37,8 +46,9 @@ namespace Project_Arcade
             {
                 case "1":
                     Console.Clear();
-                    Console.WriteLine("\r\n");
-                    ShowText();
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+                    Console.ResetColor();
                     Menu();
                     break;
                 default:
@@ -49,7 +59,10 @@ namespace Project_Arcade
 
         public static void Menu()
         {
-            Console.WriteLine("\r\n");
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            ShowText();
+            Console.ResetColor();
             Console.WriteLine("Select a Game");
             Console.WriteLine("Press [1] to play Snake");
             Console.WriteLine("Press [2] to play Hangman");
