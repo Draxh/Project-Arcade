@@ -69,8 +69,14 @@ namespace Hangman
                 {
                     hasFoundAll = false;
                     Console.WriteLine("Der Buchstebe '{0}' befindet sich nicht im Wort!", buchstaben[i]);
-                    _life--;
+                   _life--;
                     DrawHangman();
+                    
+                    foreach (var element in Words.Replace)
+                    {
+                        Console.Write(element);
+                    }
+                    Console.WriteLine(" ");
                 }
                 else
                 {

@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2142c845-0e62-4ec7-8b03-3a3e06d73b1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hangman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hangman/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/Hangman.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/Hangman.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hangman/Letters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/Letters.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.pdb" afterDir="false" />
@@ -48,12 +46,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="8024" />
+          <entry key="cs" value="8036" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="8024" />
+          <entry key="C#" value="8036" />
         </counts>
       </usages-collector>
     </session>
@@ -129,41 +127,42 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hangman/Letters.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="178" column="34" selection-start-line="178" selection-start-column="34" selection-end-line="178" selection-end-column="34" />
+            <state relative-caret-position="345">
+              <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
               <folding>
-                <marker date="1537341338661" expanded="true" signature="6:120" ph="..." />
-                <marker date="1537341338661" expanded="true" signature="139:9138" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="166:9136" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="411:493" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="526:606" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="644:734" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="799:1403" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="1096:1214" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="1231:1393" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="1474:3113" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="1497:1703" ph="/* List&lt;string&gt; LettersInList = new List&lt;string&gt;(); ... */" />
-                <marker date="1537341338661" expanded="true" signature="1841:2340" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="1973:2220" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="2241:2326" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="2447:2512" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="2560:3103" ph="/* if (RightWord.Contains(CheckEntry)) ... */" />
-                <marker date="1537341338661" expanded="true" signature="3174:3903" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="3363:3564" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="3454:3550" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="3714:3782" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="3913:4173" ph="/* public void ShowUsedLetters() ... */" />
-                <marker date="1537341338661" expanded="true" signature="4209:5238" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="4246:5228" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="5282:5793" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="5837:6331" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="6375:6864" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="6908:7366" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="7410:7857" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="7901:8252" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="8296:8641" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="8685:8984" ph="{...}" />
-                <marker date="1537341338661" expanded="true" signature="9028:9130" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="6:120" ph="..." />
+                <marker date="1537343257889" expanded="true" signature="139:9353" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="166:9351" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="411:493" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="526:606" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="644:734" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="799:1403" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="1096:1214" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="1231:1393" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="1474:3328" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="1497:1703" ph="/* List&lt;string&gt; LettersInList = new List&lt;string&gt;(); ... */" />
+                <marker date="1537343257889" expanded="true" signature="1841:2555" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="1973:2435" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="2281:2373" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="2456:2541" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="2662:2727" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="2775:3318" ph="/* if (RightWord.Contains(CheckEntry)) ... */" />
+                <marker date="1537343257889" expanded="true" signature="3389:4118" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="3578:3779" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="3669:3765" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="3929:3997" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="4128:4388" ph="/* public void ShowUsedLetters() ... */" />
+                <marker date="1537343257889" expanded="true" signature="4424:5453" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="4461:5443" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="5497:6008" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="6052:6546" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="6590:7079" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="7123:7581" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="7625:8072" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="8116:8467" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="8511:8856" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="8900:9199" ph="{...}" />
+                <marker date="1537343257889" expanded="true" signature="9243:9345" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -172,8 +171,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hangman/Words.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+            <state relative-caret-position="974">
+              <caret line="91" selection-start-line="91" selection-end-line="96" selection-end-column="36" />
               <folding>
                 <marker date="1537339342945" expanded="false" signature="6:80" ph="..." />
                 <marker date="1537339342945" expanded="true" signature="101:2971" ph="{...}" />
@@ -343,12 +342,12 @@
       <workItem from="1537165923054" duration="11564000" />
       <workItem from="1537252046179" duration="10232000" />
       <workItem from="1537281508129" duration="11330000" />
-      <workItem from="1537339012513" duration="3544000" />
+      <workItem from="1537339012513" duration="3878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69471000" />
+    <option name="totallyTimeSpent" value="69805000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,13 +360,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2771855" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2771855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39328277" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39328277" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -377,7 +377,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="14" weight="0.53846157" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -464,28 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hangman/Words.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
-          <folding>
-            <marker date="1537339342945" expanded="false" signature="6:80" ph="..." />
-            <marker date="1537339342945" expanded="true" signature="101:2971" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="128:2968" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="430:520" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="561:661" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="701:793" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="843:1014" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="1050:1765" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="1284:1704" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="1809:2251" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="2311:2961" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="2626:2693" ph="{...}" />
-            <marker date="1537339342945" expanded="true" signature="2741:2812" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hangman/Hangman.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -512,43 +490,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Hangman/Words.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="974">
+          <caret line="91" selection-start-line="91" selection-end-line="96" selection-end-column="36" />
+          <folding>
+            <marker date="1537339342945" expanded="false" signature="6:80" ph="..." />
+            <marker date="1537339342945" expanded="true" signature="101:2971" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="128:2968" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="430:520" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="561:661" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="701:793" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="843:1014" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="1050:1765" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="1284:1704" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="1809:2251" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="2311:2961" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="2626:2693" ph="{...}" />
+            <marker date="1537339342945" expanded="true" signature="2741:2812" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Hangman/Letters.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="178" column="34" selection-start-line="178" selection-start-column="34" selection-end-line="178" selection-end-column="34" />
+        <state relative-caret-position="345">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
           <folding>
-            <marker date="1537341338661" expanded="true" signature="6:120" ph="..." />
-            <marker date="1537341338661" expanded="true" signature="139:9138" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="166:9136" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="411:493" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="526:606" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="644:734" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="799:1403" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="1096:1214" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="1231:1393" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="1474:3113" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="1497:1703" ph="/* List&lt;string&gt; LettersInList = new List&lt;string&gt;(); ... */" />
-            <marker date="1537341338661" expanded="true" signature="1841:2340" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="1973:2220" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="2241:2326" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="2447:2512" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="2560:3103" ph="/* if (RightWord.Contains(CheckEntry)) ... */" />
-            <marker date="1537341338661" expanded="true" signature="3174:3903" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="3363:3564" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="3454:3550" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="3714:3782" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="3913:4173" ph="/* public void ShowUsedLetters() ... */" />
-            <marker date="1537341338661" expanded="true" signature="4209:5238" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="4246:5228" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="5282:5793" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="5837:6331" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="6375:6864" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="6908:7366" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="7410:7857" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="7901:8252" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="8296:8641" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="8685:8984" ph="{...}" />
-            <marker date="1537341338661" expanded="true" signature="9028:9130" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="6:120" ph="..." />
+            <marker date="1537343257889" expanded="true" signature="139:9353" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="166:9351" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="411:493" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="526:606" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="644:734" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="799:1403" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="1096:1214" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="1231:1393" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="1474:3328" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="1497:1703" ph="/* List&lt;string&gt; LettersInList = new List&lt;string&gt;(); ... */" />
+            <marker date="1537343257889" expanded="true" signature="1841:2555" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="1973:2435" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="2281:2373" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="2456:2541" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="2662:2727" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="2775:3318" ph="/* if (RightWord.Contains(CheckEntry)) ... */" />
+            <marker date="1537343257889" expanded="true" signature="3389:4118" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="3578:3779" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="3669:3765" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="3929:3997" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="4128:4388" ph="/* public void ShowUsedLetters() ... */" />
+            <marker date="1537343257889" expanded="true" signature="4424:5453" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="4461:5443" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="5497:6008" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="6052:6546" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="6590:7079" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="7123:7581" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="7625:8072" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="8116:8467" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="8511:8856" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="8900:9199" ph="{...}" />
+            <marker date="1537343257889" expanded="true" signature="9243:9345" ph="{...}" />
           </folding>
         </state>
       </provider>
