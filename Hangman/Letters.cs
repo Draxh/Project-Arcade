@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Hangman
 {
@@ -174,6 +176,7 @@ namespace Hangman
                     hangman = new Hangman();
                     DrawHangman9();
                     Hangman.ShowTheStart = false;
+                    Thread.Sleep(3000);
                     hangman.lose();
                     break;
             }

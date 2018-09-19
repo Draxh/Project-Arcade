@@ -30,6 +30,7 @@ namespace Hangman
 
         public void Start()
         {
+            Console.Clear();
             Console.WriteLine("Möchtest du vorgebene Wörter haben oder selber welche erstellen? [1: Vorgegebene | 2: Selber (2 Spieler-Modus)]");
             string FirstEntry = Console.ReadLine();
             
@@ -115,7 +116,22 @@ namespace Hangman
         
         public void AfterGame()
         {
-            Console.WriteLine("ha");
+            Console.WriteLine("Play again [1]");
+            Console.WriteLine("Exit Game[2]");
+            string AfterGameEntry = Console.ReadLine();
+
+            switch (Convert.ToInt16(AfterGameEntry))
+            {
+                    case 1:
+                        Start();
+                        break;
+                    case 2:
+                        GameChooser.Menu();
+                        break;
+                    default:
+                        Console.WriteLine("Wrong Entry");
+                        break;
+            }
         }
     }
 }
