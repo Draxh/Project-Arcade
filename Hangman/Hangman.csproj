@@ -38,6 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileWord.cs" />
     <Compile Include="GameChooser.cs" />
     <Compile Include="Hangman.cs" />
     <Compile Include="Letters.cs" />

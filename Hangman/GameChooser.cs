@@ -7,7 +7,6 @@ namespace Project_Arcade
     public class GameChooser
     {
         private static Hangman.Hangman hangman;
-        private static Words _createWords;
 
 
         private static string[] Arcade =
@@ -63,8 +62,6 @@ namespace Project_Arcade
                     Console.Clear();
                     Console.WriteLine("Hangman");
                     hangman = new Hangman.Hangman();
-                    _createWords = new Words();
-                    _createWords.splitWords();
                     hangman.Start();
                     break;
                 default:

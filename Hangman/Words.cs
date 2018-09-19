@@ -11,6 +11,7 @@ using System;
          private static int _whereToWrite;
          private static string myPlayWords;
          private static string[] _replace;
+         private static Hangman hangman;
 
          public static string[] Replace
          {
@@ -30,26 +31,60 @@ using System;
              set => _playWord = value;
          }
  
-         private void GetWords()
+         private void GetWords(string Language)
          {
-             WordsInTextFile = System.IO.File.ReadAllText(@"..\..\..\TextForHangman\WordForHangman.txt");
+             WordsInTextFile = System.IO.File.ReadAllText(@"..\..\..\TextForHangman\WordForHangman" + Language + ".txt");
+             splitWords();
          }
- 
+
+         public void SetLanguage()
+         {
+             Console.WriteLine("Möchten Sie Englische oder Deutsche Wörter? [E|D]");
+             string SetLanguage = Console.ReadLine();
+             SetLanguage = SetLanguage.ToUpper();
+             switch (SetLanguage)
+             {
+                 case "D":
+                     SetLanguage = "German";
+                     Console.Clear();
+                     break;
+                 case "E":
+                     SetLanguage = "English";
+                     Console.Clear();
+                     break;
+                 default:
+                     Console.WriteLine("Falsche Eingabe");
+                     break;
+             }
+             
+             GetWords(SetLanguage);
+         }
+         
          public void splitWords()
          {
-             GetWords();
+             
+                 
              string[] myPlayWords = WordsInTextFile.Split(';');
              
              Random rnd = new Random();
              int rndIndex = rnd.Next(0, myPlayWords.Length - 1);
              // Console.WriteLine(myPlayWords[rndIndex]);
              _playWord = myPlayWords[rndIndex];
-             Console.WriteLine(_playWord);
-
+             // Console.WriteLine(_playWord);
             
+             OnlyLengthWord(_playWord);
+         }
+
+         public void OnlyLengthWord(string LenghtPlayWord)
+         {
+             
+             Console.Clear();
+             hangman = new Hangman();
+             
              Console.Write("Wort: ");
-             _replace = new string[_playWord.Length];
-             for (int i = 0; i < _playWord.Length; i++)
+             string FancyPlayWord = LenghtPlayWord;
+             _replace = new string[FancyPlayWord.Length];
+             for (int i = 0; i < FancyPlayWord.Length; i++)
              {
                  _replace[i] = "_ ";
              }
@@ -60,11 +95,8 @@ using System;
              }
 
              Console.WriteLine(" ");
-             _whereToWrite = _playWord.Length;
- 
+             _whereToWrite = FancyPlayWord.Length;
+             hangman.StartNormal(FancyPlayWord);
          }
-         
-         
-         
      }
  }

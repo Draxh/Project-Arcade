@@ -1,15 +1,26 @@
 using System;
 using System.ComponentModel;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
+using Project_Arcade;
 
 namespace Hangman
 {
     public class Hangman
     {
         private static string _entryLetter;
+        private static Words _createWords;
+        private static FileWord _fileWord;
         private static Letters letters;
-        
+        private static string WhateverPlayWord;
+        private static bool showTheStart = Letters.ShowStart;
+
+        public static bool ShowTheStart
+        {
+            get => showTheStart;
+            set => showTheStart = value;
+        }
 
         public static string EntryLetter
         {
@@ -19,51 +30,92 @@ namespace Hangman
 
         public void Start()
         {
-            letters = new Letters();
-            var chars = new[]{_entryLetter};
-            int countEntry = 0;
+            Console.WriteLine("Möchtest du vorgebene Wörter haben oder selber welche erstellen? [1: Vorgegebene | 2: Selber (2 Spieler-Modus)]");
+            string FirstEntry = Console.ReadLine();
             
-                Console.Write("Schreiben sie ein Buchstabe ( Achtung: Alle buchstaben in klein eingeben!! ): ");
-                _entryLetter = Console.ReadLine();
-
-            chars[countEntry] = _entryLetter;
-            countEntry++;
-            
-            
-            letters.CheckEntryLetter();
-            bool showTheStart = global::Hangman.Letters.ShowStart;
-            // Console.WriteLine(showTheStart);
-            if (showTheStart)
+            switch (FirstEntry)
             {
-                Start();
-
+                case "1":
+                    _createWords = new Words();
+                    _createWords.SetLanguage();
+                    //StartNormal();
+                    break;
+                case "2":
+                    _fileWord = new FileWord();
+                    _fileWord.InsertWord();
+                    break;
+                default:
+                    Console.WriteLine("Falsche Eingabe!");
+                    break;
             }
-           
+            
         }
 
-        public void End()
+        public void StartNormal(string FirstPlayWord)
         {
+            letters = new Letters();
+            string DifferentPlayWords = FirstPlayWord;
 
-            bool IsEnd = false;
+            Console.Write("Schreiben sie ein Buchstabe ( Achtung: Alle buchstaben in klein eingeben!! ): ");
+            _entryLetter = Console.ReadLine();
+
+            letters.CheckEntryLetter(DifferentPlayWords);
             
-
-            for (int i = 0; i < Words.WhereToWrite; i++)
+            //Console.WriteLine(DifferentPlayWords);
+            // Console.WriteLine(showTheStart);
+            End(DifferentPlayWords);
+            if (showTheStart)
             {
-                
-                if (Words.Replace[i] != "_ ")
-                {
-                    IsEnd = true;
-                }
-                else
-                {
-                    IsEnd = false;
-                }
+                StartNormal(DifferentPlayWords);
             }
+        }
 
+        public void End(string CheckPlayWord)
+        {
+            bool IsEnd = false;
+            WhateverPlayWord = CheckPlayWord;
+            string[] CheckChars = Words.Replace;
+            String FinishHangman = string.Join("", CheckChars);
+
+            FinishHangman = FinishHangman.ToLower();
+            WhateverPlayWord = WhateverPlayWord.ToLower();
+                
+            
+            if (WhateverPlayWord == FinishHangman)
+            {
+                IsEnd = true;
+                showTheStart = false;
+            }
+            else
+            {
+                IsEnd = false;
+            }
+            
             if (IsEnd)
             {
-                Console.WriteLine("Richtig!!");
+                
+                Console.Clear();
+                Console.WriteLine("WOW, du bist mega gut!!");
+                Console.WriteLine("Das wort war: " + WhateverPlayWord.ToUpper());
+                
+                AfterGame();
+              
             }
+        }
+
+        public void lose()
+        {
+            
+            Console.Clear();
+            Console.WriteLine("WOW, du bist mega Schlecht!!");
+            Console.WriteLine("Das wort wäre '" + WhateverPlayWord.ToUpper() + "' gewesen");
+            
+            AfterGame();
+        }
+        
+        public void AfterGame()
+        {
+            Console.WriteLine("ha");
         }
     }
 }
