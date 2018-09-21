@@ -43,7 +43,6 @@ namespace Project_Arcade
             Console.WriteLine("Press Enter to get into the Arcade!");
             Console.WriteLine("Have Fun!");
             Console.ReadLine();
-
         }
 
         public static void Select()
@@ -94,7 +93,8 @@ namespace Project_Arcade
                     Field.StartGame();
                     break;
                 case 2:
-
+                    StopMusic();
+                    PlayHangmanMusic();
                     Console.Clear();
                     Console.WriteLine("Hangman");
                     hangman = new Hangman.Hangman();
@@ -104,25 +104,24 @@ namespace Project_Arcade
                     Console.WriteLine("Falsche Eingabe");
                     break;
             }
-            
         }
+
         public static void PlayMenuMusic()
         {
             player.SoundLocation = @"..\..\..\ArcadeMusic.wav";
-            player.Play();
+            player.PlayLooping();
         }
 
         public static void PlaySnakeMusic()
         {
             player.SoundLocation = @"..\..\..\StarCraft II - Wings of Liberty Main Theme.wav";
-            player.Play();
+            player.PlayLooping();
         }
-        
+
         public static void PlayHangmanMusic()
         {
             player.SoundLocation = @"..\..\..\Nintendo Wii - Mii Channel Theme.wav";
-            player.Play();
-
+            player.PlayLooping();
         }
 
         public static void StopMusic()
@@ -132,7 +131,5 @@ namespace Project_Arcade
             player.SoundLocation = @"..\..\..\Nintendo Wii - Mii Channel Theme.wav";
             player.Stop();
         }
-
-        
     }
 }

@@ -48,17 +48,13 @@ namespace Hangman
             else
             {
                 _showStart = true;
-                // Console.WriteLine(checkEntry);
+
                 LetterInWord(_chars, RightWord);
             }
         }
 
         public bool LetterInWord(char[] buchstaben, string RightWord)
         {
-            // List<string> LettersInList = new List<string>();
-            // string RightWord = Words.PlayWord;
-            //string CheckEntry = Hangman.EntryLetter;
-            // CheckEntry = CheckEntry.ToUpper();
             RightWord = RightWord.ToLower();
 
             var hasFoundAll = true;
@@ -69,12 +65,12 @@ namespace Hangman
                 if (!RightWord.Contains(Convert.ToString(buchstabe)))
                 {
                     hasFoundAll = false;
-                    
+
                     Console.Clear();
                     Console.WriteLine("Der Buchstebe '{0}' befindet sich nicht im Wort!", buchstaben[i]);
-                   _life--;
+                    _life--;
                     DrawHangman();
-                    
+
                     WringUsedletters.Add(Convert.ToString(buchstaben[i]));
 
                     Console.Write("Buchstaben welche nicht im Wort sind: ");
@@ -82,16 +78,16 @@ namespace Hangman
                     foreach (var WrongElements in WringUsedletters)
                     {
                         Console.Write(WrongElements + " ");
-                        
                     }
-                    
+
                     Console.WriteLine(" ");
-                    
+
                     Console.Write("Wort: ");
                     foreach (var element in Words.Replace)
                     {
                         Console.Write(element);
                     }
+
                     Console.WriteLine(" ");
                 }
                 else
@@ -107,22 +103,6 @@ namespace Hangman
             }
 
             return hasFoundAll;
-
-
-            /*if (RightWord.Contains(CheckEntry))
-            {
-                IndexOfWord = RightWord.IndexOf(CheckEntry);
-                Console.WriteLine("Der Buchstabe '{0}' befindet sich an der {1} Stelle!", CheckEntry, IndexOfWord + 1);
-                // Console.WriteLine(Words.WhereToWrite);
-                ShowLetterInWord();
-
-            }
-            else
-            {
-                Console.WriteLine("Der Buchstebe '{0}' befindet sich nicht im Wort!", CheckEntry);
-                _life--;
-                DrawHangman();
-            }*/
         }
 
         public void ShowLetterInWord(string ShowRightWord)
@@ -153,19 +133,10 @@ namespace Hangman
 
             Console.WriteLine(" ");
 
-            //ShowUsedLetters();
+
             hangman.End(ShowRightWord);
         }
 
-        /*public void ShowUsedLetters()
-        {
-            Console.WriteLine("Eingegebene Buchsaben: ");
-            foreach (var WhatEver in chars)
-            {
-                Console.Write(WhatEver);
-            }
-            Console.WriteLine(" ");
-        }*/
 
         private void DrawHangman()
         {

@@ -12,37 +12,44 @@ namespace Hangman
         {
             this.Typ = typ;
         }
-        
-        
+
+
         public string Render()
-        
+
         {
             Console.OutputEncoding = Encoding.Unicode;
             if (Typ == FieldType.border)
             {
                 return "#";
-            }else if (Typ == FieldType.empty)
+            }
+            else if (Typ == FieldType.empty)
             {
                 return " ";
-            }else if (Typ == FieldType.snake)
+            }
+            else if (Typ == FieldType.snake)
             {
                 return "0";
-            }else if (Typ == FieldType.apple){
-                
+            }
+            else if (Typ == FieldType.apple)
+            {
                 return "O";
-            }else if (Typ == FieldType.snaketail)
+            }
+            else if (Typ == FieldType.snaketail)
             {
                 return "o";
             }
-           
+
 
             return " ";
         }
 
         public enum FieldType
         {
-            border, empty, snake, apple, snaketail 
+            border,
+            empty,
+            snake,
+            apple,
+            snaketail
         }
-        
     }
 }

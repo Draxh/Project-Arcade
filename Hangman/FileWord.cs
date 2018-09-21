@@ -11,10 +11,9 @@ namespace Hangman
         private static Words words;
         private static char[] OwnChars = new char[1];
 
-        
+
         public void InsertWord()
         {
-          
             Console.Write("Schreibe das Wort welches du haben möchtest: ");
             string SelfWord = Console.ReadLine();
             SelfWord = SelfWord + ";";
@@ -31,11 +30,11 @@ namespace Hangman
             OwnWordsInTextFile = System.IO.File.ReadAllText(@"..\..\..\TextForHangman\WordForHangmanSelf.txt");
             SelectInsertedWord();
         }
-        
+
         public void SelectInsertedWord()
         {
             Console.Clear();
-            
+
             hangman = new Hangman();
             words = new Words();
             string[] MyOwnPlayWords = OwnWordsInTextFile.Split(';');
@@ -45,7 +44,9 @@ namespace Hangman
             }
 
             Console.WriteLine(" ");
-            Console.Write("Wähle dein Wort aus mit welchem du Spielen möchtest (1 --> 1. Wort, 2 --> 2. Wort etc. '{0}' für das eingegebene): ", MyOwnPlayWords.Length - 1);
+            Console.Write(
+                "Wähle dein Wort aus mit welchem du Spielen möchtest (1 --> 1. Wort, 2 --> 2. Wort etc. '{0}' für das eingegebene): ",
+                MyOwnPlayWords.Length - 1);
             var SelectWord = Console.ReadLine();
             string OwnRightWord = MyOwnPlayWords[Convert.ToInt16(SelectWord) - 1];
             words.OnlyLengthWord(OwnRightWord);

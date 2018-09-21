@@ -31,9 +31,10 @@ namespace Hangman
         public void Start()
         {
             Console.Clear();
-            Console.WriteLine("Möchtest du vorgebene Wörter haben oder selber welche erstellen? [1: Vorgegebene | 2: Selber (2 Spieler-Modus)]");
+            Console.WriteLine(
+                "Möchtest du vorgebene Wörter haben oder selber welche erstellen? [1: Vorgegebene | 2: Selber (2 Spieler-Modus)]");
             string FirstEntry = Console.ReadLine();
-            
+
             switch (FirstEntry)
             {
                 case "1":
@@ -49,12 +50,10 @@ namespace Hangman
                     Console.WriteLine("Falsche Eingabe!");
                     break;
             }
-            
         }
 
         public void StartNormal(string FirstPlayWord)
         {
-            
             letters = new Letters();
             string DifferentPlayWords = FirstPlayWord;
 
@@ -62,7 +61,7 @@ namespace Hangman
             _entryLetter = Console.ReadLine();
 
             letters.CheckEntryLetter(DifferentPlayWords);
-            
+
             //Console.WriteLine(DifferentPlayWords);
             // Console.WriteLine(showTheStart);
             End(DifferentPlayWords);
@@ -81,8 +80,8 @@ namespace Hangman
 
             FinishHangman = FinishHangman.ToLower();
             WhateverPlayWord = WhateverPlayWord.ToLower();
-                
-            
+
+
             if (WhateverPlayWord == FinishHangman)
             {
                 IsEnd = true;
@@ -92,29 +91,26 @@ namespace Hangman
             {
                 IsEnd = false;
             }
-            
+
             if (IsEnd)
             {
-                
                 Console.Clear();
                 Console.WriteLine("WOW, du bist mega gut!!");
                 Console.WriteLine("Das wort war: " + WhateverPlayWord.ToUpper());
-                
+
                 AfterGame();
-              
             }
         }
 
         public void lose()
         {
-            
             Console.Clear();
             Console.WriteLine("WOW, du bist mega Schlecht!!");
             Console.WriteLine("Das wort wäre '" + WhateverPlayWord.ToUpper() + "' gewesen");
-            
+
             AfterGame();
         }
-        
+
         public void AfterGame()
         {
             Console.WriteLine("Play again [1]");
@@ -123,16 +119,16 @@ namespace Hangman
 
             switch (Convert.ToInt16(AfterGameEntry))
             {
-                    case 1:
-                        Start();
-                        break;
-                    case 2:
-                        GameChooser.PlayMenuMusic();
-                        GameChooser.Menu();
-                        break;
-                    default:
-                        Console.WriteLine("Wrong Entry");
-                        break;
+                case 1:
+                    Start();
+                    break;
+                case 2:
+                    GameChooser.PlayMenuMusic();
+                    GameChooser.Menu();
+                    break;
+                default:
+                    Console.WriteLine("Wrong Entry");
+                    break;
             }
         }
     }

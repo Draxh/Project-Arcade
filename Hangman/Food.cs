@@ -7,15 +7,13 @@ namespace Hangman
     {
         private Random rnd = new Random();
 
-        public  int FoodX { get; set; }
-        public  int FoodY { get; set; }
+        public int FoodX { get; set; }
+        public int FoodY { get; set; }
 
         public Food()
         {
             FoodX = rnd.Next(1, 54);
             FoodY = rnd.Next(1, 19);
         }
-
-         
     }
 }
