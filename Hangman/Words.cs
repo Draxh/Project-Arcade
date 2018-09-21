@@ -95,6 +95,7 @@ using System;
              }
 
              Console.WriteLine(" ");
+             
              _whereToWrite = FancyPlayWord.Length;
              hangman.StartNormal(FancyPlayWord);
          }

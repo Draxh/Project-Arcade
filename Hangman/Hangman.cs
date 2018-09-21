@@ -54,6 +54,7 @@ namespace Hangman
 
         public void StartNormal(string FirstPlayWord)
         {
+            
             letters = new Letters();
             string DifferentPlayWords = FirstPlayWord;
 
@@ -126,6 +127,7 @@ namespace Hangman
                         Start();
                         break;
                     case 2:
+                        
                         GameChooser.Menu();
                         break;
                     default:

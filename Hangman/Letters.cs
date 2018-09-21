@@ -13,6 +13,7 @@ namespace Hangman
         private static int IndexOfWord;
         private static char[] _chars;
         private static Hangman hangman;
+        static List<string> WringUsedletters = new List<string>();
 
         public static char[] Chars
         {
@@ -68,10 +69,25 @@ namespace Hangman
                 if (!RightWord.Contains(Convert.ToString(buchstabe)))
                 {
                     hasFoundAll = false;
+                    
+                    Console.Clear();
                     Console.WriteLine("Der Buchstebe '{0}' befindet sich nicht im Wort!", buchstaben[i]);
                    _life--;
                     DrawHangman();
                     
+                    WringUsedletters.Add(Convert.ToString(buchstaben[i]));
+
+                    Console.Write("Buchstaben welche nicht im Wort sind: ");
+
+                    foreach (var WrongElements in WringUsedletters)
+                    {
+                        Console.Write(WrongElements + " ");
+                        
+                    }
+                    
+                    Console.WriteLine(" ");
+                    
+                    Console.Write("Wort: ");
                     foreach (var element in Words.Replace)
                     {
                         Console.Write(element);
@@ -128,6 +144,7 @@ namespace Hangman
 
             Words.Replace[0] = Words.Replace[0].ToUpper();
 
+            Console.Clear();
             Console.Write("Wort: ");
             foreach (var element in Words.Replace)
             {

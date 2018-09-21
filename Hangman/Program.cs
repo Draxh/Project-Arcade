@@ -18,20 +18,17 @@ namespace Hangman
             get => _hangman;
             set => _hangman = value;
         }
-
-        public static void Music()
-        {
-            SoundPlayer player = new SoundPlayer();
-            player.SoundLocation = @"..\..\..\ArcadeMusic.wav";
-            player.Play();
-        }
+        
 
 
         public static void Main(string[] args)
         {
+            
             _gameChooser = new GameChooser();
+            GameChooser.PlayMenuMusic();
+            
             GameChooser.ShowText();
-            Music();
+            GameChooser.PlayMenuMusic();
             GameChooser.Select();
         }
     }
