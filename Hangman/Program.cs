@@ -25,6 +25,7 @@ namespace Hangman
         {
             
             _gameChooser = new GameChooser();
+            GameChooser.HeadPhones();
             GameChooser.PlayMenuMusic();
             
             GameChooser.ShowText();

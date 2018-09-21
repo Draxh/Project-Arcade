@@ -10,25 +10,6 @@ namespace Project_Arcade
         private static Hangman.Hangman hangman;
         public static SoundPlayer player = new SoundPlayer();
 
-        public static void PlayMenuMusic()
-        {
-                player.SoundLocation = @"..\..\..\ArcadeMusic.wav";
-                player.Play();
-        }
-
-        public static void PlaySnakeMusic()
-        {
-            player.SoundLocation = @"..\..\..\StarCraft II - Wings of Liberty Main Theme.wav";
-            player.Play();
-        }
-
-        public static void StopMusic()
-        {
-            player.SoundLocation = @"..\..\..\ArcadeMusic.wav";
-            player.SoundLocation = @"..\..\..\StarCraft II - Wings of Liberty Main Theme.wav";
-            player.Stop();
-        }
-
         private static string[] Arcade =
         {
             "▄▄▄       ██▀███   ▄████▄   ▄▄▄      ▓█████▄ ▓█████    ",
@@ -50,6 +31,19 @@ namespace Project_Arcade
             {
                 Console.WriteLine(line);
             }
+        }
+
+        public static void HeadPhones()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            ShowText();
+            Console.ResetColor();
+            Console.WriteLine("\r\n");
+            Console.WriteLine("Please make sure to use Headphoens while playing in the insane Arcade!");
+            Console.WriteLine("Press Enter to get into the Arcade!");
+            Console.WriteLine("Have Fun!");
+            Console.ReadLine();
+
         }
 
         public static void Select()
@@ -110,6 +104,35 @@ namespace Project_Arcade
                     Console.WriteLine("Falsche Eingabe");
                     break;
             }
+            
         }
+        public static void PlayMenuMusic()
+        {
+            player.SoundLocation = @"..\..\..\ArcadeMusic.wav";
+            player.Play();
+        }
+
+        public static void PlaySnakeMusic()
+        {
+            player.SoundLocation = @"..\..\..\StarCraft II - Wings of Liberty Main Theme.wav";
+            player.Play();
+        }
+        
+        public static void PlayHangmanMusic()
+        {
+            player.SoundLocation = @"..\..\..\Nintendo Wii - Mii Channel Theme.wav";
+            player.Play();
+
+        }
+
+        public static void StopMusic()
+        {
+            player.SoundLocation = @"..\..\..\ArcadeMusic.wav";
+            player.SoundLocation = @"..\..\..\StarCraft II - Wings of Liberty Main Theme.wav";
+            player.SoundLocation = @"..\..\..\Nintendo Wii - Mii Channel Theme.wav";
+            player.Stop();
+        }
+
+        
     }
 }

@@ -127,7 +127,7 @@ namespace Hangman
                         Start();
                         break;
                     case 2:
-                        
+                        GameChooser.PlayMenuMusic();
                         GameChooser.Menu();
                         break;
                     default:
