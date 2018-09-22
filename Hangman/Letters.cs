@@ -42,7 +42,7 @@ namespace Hangman
             string RightWord = DifferentPlayWords;
             if (IsNumeric = int.TryParse(Convert.ToString(_chars), out n) || _chars.Length >= 2 || _chars.Length < 1)
             {
-                Console.WriteLine("Falsche Eingabe");
+                Console.WriteLine("Wrong entry");
                 _showStart = false;
             }
             else
@@ -67,13 +67,13 @@ namespace Hangman
                     hasFoundAll = false;
 
                     Console.Clear();
-                    Console.WriteLine("Der Buchstebe '{0}' befindet sich nicht im Wort!", buchstaben[i]);
+                    Console.WriteLine("The letter '{0}' doesn't exist in the word!", buchstaben[i]);
                     _life--;
                     DrawHangman();
 
                     WringUsedletters.Add(Convert.ToString(buchstaben[i]));
 
-                    Console.Write("Buchstaben welche nicht im Wort sind: ");
+                    Console.Write("Letters that don't exist in the word: ");
 
                     foreach (var WrongElements in WringUsedletters)
                     {

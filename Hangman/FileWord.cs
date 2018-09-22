@@ -14,7 +14,7 @@ namespace Hangman
 
         public void InsertWord()
         {
-            Console.Write("Schreibe das Wort welches du haben möchtest: ");
+            Console.Write("Write your own word: ");
             string SelfWord = Console.ReadLine();
             SelfWord = SelfWord + ";";
             //Console.WriteLine(SelfWord);
@@ -45,7 +45,7 @@ namespace Hangman
 
             Console.WriteLine(" ");
             Console.Write(
-                "Wähle dein Wort aus mit welchem du Spielen möchtest (1 --> 1. Wort, 2 --> 2. Wort etc. '{0}' für das eingegebene): ",
+                "Choose the word you want to guess (1 --> 1. Word, 2 --> 2. Word etc. '{0}' for the chosen one): ",
                 MyOwnPlayWords.Length - 1);
             var SelectWord = Console.ReadLine();
             string OwnRightWord = MyOwnPlayWords[Convert.ToInt16(SelectWord) - 1];

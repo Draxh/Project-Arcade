@@ -32,7 +32,7 @@ namespace Hangman
         {
             Console.Clear();
             Console.WriteLine(
-                "Möchtest du vorgebene Wörter haben oder selber welche erstellen? [1: Vorgegebene | 2: Selber (2 Spieler-Modus)]");
+                "Would you like to create your own word or select a provided one? [1: Provided | 2: Create a word (2 Player-mode)]");
             string FirstEntry = Console.ReadLine();
 
             switch (FirstEntry)
@@ -47,7 +47,7 @@ namespace Hangman
                     _fileWord.InsertWord();
                     break;
                 default:
-                    Console.WriteLine("Falsche Eingabe!");
+                    Console.WriteLine("Wrong entry!");
                     break;
             }
         }
@@ -57,7 +57,7 @@ namespace Hangman
             letters = new Letters();
             string DifferentPlayWords = FirstPlayWord;
 
-            Console.Write("Schreiben sie ein Buchstabe ( Achtung: Alle buchstaben in klein eingeben!! ): ");
+            Console.Write("Type a letter ( Attention: All letters have to be in lower case! ): ");
             _entryLetter = Console.ReadLine();
 
             letters.CheckEntryLetter(DifferentPlayWords);
@@ -95,8 +95,8 @@ namespace Hangman
             if (IsEnd)
             {
                 Console.Clear();
-                Console.WriteLine("WOW, du bist mega gut!!");
-                Console.WriteLine("Das wort war: " + WhateverPlayWord.ToUpper());
+                Console.WriteLine("WOW, you are too good!!");
+                Console.WriteLine("The word was: " + WhateverPlayWord.ToUpper());
 
                 AfterGame();
             }
@@ -105,8 +105,8 @@ namespace Hangman
         public void lose()
         {
             Console.Clear();
-            Console.WriteLine("WOW, du bist mega Schlecht!!");
-            Console.WriteLine("Das wort wäre '" + WhateverPlayWord.ToUpper() + "' gewesen");
+            Console.WriteLine("Better luck next time!!");
+            Console.WriteLine("The word was '" + WhateverPlayWord.ToUpper());
 
             AfterGame();
         }
@@ -114,7 +114,7 @@ namespace Hangman
         public void AfterGame()
         {
             Console.WriteLine("Play again [1]");
-            Console.WriteLine("Exit Game[2]");
+            Console.WriteLine("Exit game[2]");
             string AfterGameEntry = Console.ReadLine();
 
             switch (Convert.ToInt16(AfterGameEntry))

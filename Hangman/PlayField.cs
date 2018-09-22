@@ -37,7 +37,7 @@ namespace Hangman
         public PlayField()
         {
             foodTimer = new System.Timers.Timer();
-            foodTimer.Interval = 7500;
+            foodTimer.Interval = 12500;
 
             foodTimer.Elapsed += GenerateFood;
 
@@ -116,7 +116,7 @@ namespace Hangman
                 Move();
                 SetSnakeParts();
                 Render();
-                Thread.Sleep(100);
+                Thread.Sleep(125);
             }
 
             CheckHighScore();
@@ -226,8 +226,8 @@ namespace Hangman
         public void BackToMenu()
         {
             KeyCheck.Abort();
-            Console.WriteLine("Press [1] to Play Again");
-            Console.WriteLine("Press [2] to go to the Game Menu");
+            Console.WriteLine("Press [1] to play again");
+            Console.WriteLine("Press [2] to go to the game menu");
             Console.Write("");
             var check = Console.ReadLine();
             
@@ -254,11 +254,11 @@ namespace Hangman
             {
                 HighScore = CountScore;
                 System.IO.File.WriteAllText(@"..\..\..\HighScoreForSnake\HighScore.txt", Convert.ToString(HighScore));
-                Console.WriteLine("Congratulations you broke the Highscore!");
+                Console.WriteLine("Congratulations you beat the Highscore!");
             }
 
             string HighScoreFile = System.IO.File.ReadAllText(@"..\..\..\HighScoreForSnake\HighScore.txt");
-            Console.WriteLine("The HighScore is " + HighScoreFile +"!");
+            Console.WriteLine("The Highscore is " + HighScoreFile +"!");
         }
     }
 }

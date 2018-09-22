@@ -39,7 +39,7 @@ namespace Hangman
 
         public void SetLanguage()
         {
-            Console.WriteLine("Möchten Sie Englische oder Deutsche Wörter? [E|D]");
+            Console.WriteLine("Would you like english or german words? [E|D]");
             string SetLanguage = Console.ReadLine();
             SetLanguage = SetLanguage.ToUpper();
             switch (SetLanguage)
@@ -53,7 +53,7 @@ namespace Hangman
                     Console.Clear();
                     break;
                 default:
-                    Console.WriteLine("Falsche Eingabe");
+                    Console.WriteLine("Wrong entry");
                     break;
             }
 
@@ -78,7 +78,7 @@ namespace Hangman
             Console.Clear();
             hangman = new Hangman();
 
-            Console.Write("Wort: ");
+            Console.Write("Word: ");
             string FancyPlayWord = LenghtPlayWord;
             _replace = new string[FancyPlayWord.Length];
             for (int i = 0; i < FancyPlayWord.Length; i++)
