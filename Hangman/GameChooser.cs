@@ -118,7 +118,7 @@ namespace Project_Arcade
 
         public static void PlaySnakeMusic()
         {
-            player.SoundLocation = @"..\..\..\StarCraft II - Wings of Liberty Main Theme.wav";
+            player.SoundLocation = @"..\..\..\Wii - Shop.wav";
             player.PlayLooping();
         }
 

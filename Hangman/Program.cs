@@ -18,16 +18,14 @@ namespace Hangman
             get => _hangman;
             set => _hangman = value;
         }
-        
 
 
         public static void Main(string[] args)
         {
-            
             _gameChooser = new GameChooser();
             GameChooser.HeadPhones();
             GameChooser.PlayMenuMusic();
-            
+
             GameChooser.ShowText();
             GameChooser.PlayMenuMusic();
             GameChooser.Select();

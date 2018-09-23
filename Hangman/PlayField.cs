@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using Project_Arcade;
 using Timer = System.Timers.Timer;
+using System.Media;
 
 namespace Hangman
 
@@ -44,7 +45,6 @@ namespace Hangman
             foodTimer.AutoReset = true;
 
             foodTimer.Enabled = true;
-            
         }
 
         public void ResetField()
@@ -107,6 +107,7 @@ namespace Hangman
         public void CreateSnake()
         {
             Field[Snakex][Snakey] = new FieldContent(FieldContent.FieldType.snake);
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
 
@@ -128,7 +129,6 @@ namespace Hangman
 
         public bool CheckFieldContent()
         {
-            //Eat Apple
             if (GeneratedFood != null)
             {
                 if (Snakex == GeneratedFood.FoodX && Snakey == GeneratedFood.FoodY)
@@ -141,7 +141,7 @@ namespace Hangman
                 }
             }
 
-            //WallHit
+
             if (Snakex <= 0 || Snakex >= Width - 1 || Snakey <= 0 || Snakey >= Height - 1)
             {
                 GameIsOn = false;
@@ -171,7 +171,7 @@ namespace Hangman
                     break;
             }
 
-            //Check field return 
+
             if (!CheckFieldContent())
             {
                 Snakepart tail = Snake.PartList[0];
@@ -222,7 +222,6 @@ namespace Hangman
                 if (Snakex == Snake.PartList[i].x && Snakey == Snake.PartList[i].y)
                 {
                     GameIsOn = false;
-                    
                 }
         }
 
@@ -233,7 +232,7 @@ namespace Hangman
             Console.WriteLine("Press [2] to go to the game menu");
             Console.Write("");
             var check = Console.ReadLine();
-            
+
             switch (check)
             {
                 case "1":
@@ -243,6 +242,7 @@ namespace Hangman
                     Field.Initialize();
                     Field.CreateSnake();
                     Field.StartGame();
+
                     break;
                 case "2":
                     GameChooser.PlayMenuMusic();
@@ -261,7 +261,7 @@ namespace Hangman
             }
 
             string HighScoreFile = System.IO.File.ReadAllText(@"..\..\..\HighScoreForSnake\HighScore.txt");
-            Console.WriteLine("The Highscore is " + HighScoreFile +"!");
+            Console.WriteLine("The Highscore is " + HighScoreFile + "!");
         }
     }
 }

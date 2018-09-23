@@ -28,19 +28,12 @@ namespace Hangman
             }
             else if (Typ == FieldType.snake)
             {
-                return "0";
+                return "■";
             }
             else if (Typ == FieldType.apple)
             {
-                
                 return "O";
-                
             }
-            else if (Typ == FieldType.snaketail)
-            {
-                return "o";
-            }
-
 
             return " ";
         }
@@ -51,9 +44,6 @@ namespace Hangman
             empty,
             snake,
             apple,
-            snaketail
         }
     }
-
-    
 }
