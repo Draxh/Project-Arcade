@@ -32,7 +32,9 @@ namespace Hangman
             }
             else if (Typ == FieldType.apple)
             {
+                
                 return "O";
+                
             }
             else if (Typ == FieldType.snaketail)
             {
@@ -52,4 +54,6 @@ namespace Hangman
             snaketail
         }
     }
+
+    
 }

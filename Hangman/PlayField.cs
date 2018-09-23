@@ -37,13 +37,14 @@ namespace Hangman
         public PlayField()
         {
             foodTimer = new System.Timers.Timer();
-            foodTimer.Interval = 12500;
+            foodTimer.Interval = 10000;
 
             foodTimer.Elapsed += GenerateFood;
 
             foodTimer.AutoReset = true;
 
             foodTimer.Enabled = true;
+            
         }
 
         public void ResetField()
@@ -134,6 +135,8 @@ namespace Hangman
                 {
                     GeneratedFood = null;
                     CountScore++;
+                    foodTimer.Stop();
+                    GeneratedFood = new Food();
                     return true;
                 }
             }
