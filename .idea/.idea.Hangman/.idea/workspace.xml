@@ -4,17 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/Hangman/Letters.cs" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2142c845-0e62-4ec7-8b03-3a3e06d73b1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hangman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hangman/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/GameChooser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/GameChooser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/PlayField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/PlayField.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/Properties/FieldContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/Properties/FieldContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/obj/Debug/Hangman.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/obj/Debug/Hangman.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/obj/Debug/Hangman.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/obj/Debug/Hangman.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="2142c845-0e62-4ec7-8b03-3a3e06d73b1a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,18 +53,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cs" value="7220" />
-          <entry key="txt" value="75" />
+          <entry key="txt" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C#" value="7220" />
-          <entry key="PLAIN_TEXT" value="75" />
+          <entry key="PLAIN_TEXT" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="1" />
@@ -309,8 +299,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hangman/PlayField.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="214" column="51" selection-start-line="214" selection-start-column="51" selection-end-line="214" selection-end-column="51" />
+            <state relative-caret-position="350">
+              <caret line="242" column="40" lean-forward="true" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="40" />
               <folding>
                 <marker date="1537717652995" expanded="false" signature="6:205" ph="..." />
                 <marker date="1537717652995" expanded="true" signature="225:7444" ph="{...}" />
@@ -429,6 +419,11 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Hangman" type="24d0babc:SolutionExplorerModelNode" />
             </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Hangman" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Hangman" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -504,7 +499,7 @@
       <workItem from="1537511353518" duration="6770000" />
       <workItem from="1537616491182" duration="8973000" />
       <workItem from="1537706441692" duration="2640000" />
-      <workItem from="1537715892779" duration="1779000" />
+      <workItem from="1537715892779" duration="1887000" />
     </task>
     <task id="LOCAL-00001" summary="Color Change">
       <created>1537350682957</created>
@@ -548,11 +543,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537706472567</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finall Product">
+      <created>1537717729092</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537717729092</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117031000" />
+    <option name="totallyTimeSpent" value="117139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -567,12 +569,12 @@
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13859275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13859275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29333332" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29333332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.50545454" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -609,7 +611,8 @@
     <MESSAGE value="Before Finish" />
     <MESSAGE value="Alomst Done" />
     <MESSAGE value="Alomst Done2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alomst Done2" />
+    <MESSAGE value="Finall Product" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finall Product" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -821,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hangman/PlayField.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="214" column="51" selection-start-line="214" selection-start-column="51" selection-end-line="214" selection-end-column="51" />
+        <state relative-caret-position="350">
+          <caret line="242" column="40" lean-forward="true" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="40" />
           <folding>
             <marker date="1537717652995" expanded="false" signature="6:205" ph="..." />
             <marker date="1537717652995" expanded="true" signature="225:7444" ph="{...}" />
