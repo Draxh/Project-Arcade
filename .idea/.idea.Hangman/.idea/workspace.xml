@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2142c845-0e62-4ec7-8b03-3a3e06d73b1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Hangman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hangman/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/GameChooser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/GameChooser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/bin/Debug/Hangman.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/obj/Debug/Hangman.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/obj/Debug/Hangman.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman/obj/Debug/Hangman.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Hangman/obj/Debug/Hangman.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,26 +55,26 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cs" value="7221" />
-          <entry key="txt" value="114" />
+          <entry key="txt" value="136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C#" value="7221" />
-          <entry key="PLAIN_TEXT" value="114" />
+          <entry key="PLAIN_TEXT" value="136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.27" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -224,8 +219,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hangman/GameChooser.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="124" column="45" lean-forward="true" selection-start-line="124" selection-start-column="45" selection-end-line="124" selection-end-column="45" />
+            <state relative-caret-position="102">
+              <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
               <folding>
                 <marker date="1537718700598" expanded="false" signature="6:110" ph="..." />
                 <marker date="1537718700598" expanded="true" signature="136:4765" ph="{...}" />
@@ -299,11 +294,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hangman/PlayField.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
+            <state relative-caret-position="3015">
               <caret line="208" selection-start-line="208" selection-end-line="208" />
               <folding>
                 <marker date="1537717652995" expanded="false" signature="6:205" ph="..." />
-                <marker date="1537717652995" expanded="true" signature="225:7444" ph="{...}" />
                 <marker date="1537717652995" expanded="true" signature="254:7442" ph="{...}" />
                 <marker date="1537717652995" expanded="true" signature="791:1030" ph="{...}" />
                 <marker date="1537717652995" expanded="true" signature="1064:1696" ph="{...}" />
@@ -359,6 +353,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -500,7 +495,8 @@
       <workItem from="1537616491182" duration="8973000" />
       <workItem from="1537706441692" duration="2640000" />
       <workItem from="1537715892779" duration="1887000" />
-      <workItem from="1537717959746" duration="731000" />
+      <workItem from="1537717959746" duration="827000" />
+      <workItem from="1537719291897" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="Color Change">
       <created>1537350682957</created>
@@ -565,11 +561,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537718644425</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="End Resultat">
+      <created>1537718743551</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1537718743551</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117870000" />
+    <option name="totallyTimeSpent" value="117987000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,15 +584,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1920" height="943" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13978495" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946237" visible="true" weight="0.33868974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49892473" weight="0.33868974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.50545454" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -600,8 +602,8 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.18545455" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="13" sideWeight="0.50053763" side_tool="true" visible="true" weight="0.33868974" />
-      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.49946237" weight="0.8108776" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="13" sideWeight="0.50107527" side_tool="true" visible="true" weight="0.55636364" />
+      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.49892473" weight="0.8108776" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32969698" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -628,7 +630,8 @@
     <MESSAGE value="Alomst Done2" />
     <MESSAGE value="Finall Product" />
     <MESSAGE value="Neustes Produkt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Neustes Produkt" />
+    <MESSAGE value="End Resultat" />
+    <option name="LAST_COMMIT_MESSAGE" value="End Resultat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -807,11 +810,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hangman/PlayField.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
+        <state relative-caret-position="3015">
           <caret line="208" selection-start-line="208" selection-end-line="208" />
           <folding>
             <marker date="1537717652995" expanded="false" signature="6:205" ph="..." />
-            <marker date="1537717652995" expanded="true" signature="225:7444" ph="{...}" />
             <marker date="1537717652995" expanded="true" signature="254:7442" ph="{...}" />
             <marker date="1537717652995" expanded="true" signature="791:1030" ph="{...}" />
             <marker date="1537717652995" expanded="true" signature="1064:1696" ph="{...}" />
@@ -852,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hangman/GameChooser.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="124" column="45" lean-forward="true" selection-start-line="124" selection-start-column="45" selection-end-line="124" selection-end-column="45" />
+        <state relative-caret-position="102">
+          <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
           <folding>
             <marker date="1537718700598" expanded="false" signature="6:110" ph="..." />
             <marker date="1537718700598" expanded="true" signature="136:4765" ph="{...}" />
