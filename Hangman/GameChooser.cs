@@ -131,7 +131,6 @@ namespace Project_Arcade
         public static void StopMusic()
         {
             player.SoundLocation = @"..\..\..\ArcadeMusic.wav";
-            player.SoundLocation = @"..\..\..\StarCraft II - Wings of Liberty Main Theme.wav";
             player.SoundLocation = @"..\..\..\Nintendo Wii - Mii Channel Theme.wav";
             player.Stop();
         }
