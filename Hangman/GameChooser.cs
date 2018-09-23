@@ -118,7 +118,7 @@ namespace Project_Arcade
 
         public static void PlaySnakeMusic()
         {
-            player.SoundLocation = @"..\..\..\Wii - Shop.wav";
+            player.SoundLocation = @"..\..\..\Nintendo Wii - Mii Channel Theme.wav";
             player.PlayLooping();
         }
 
